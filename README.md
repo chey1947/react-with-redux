@@ -8,3 +8,11 @@ from the command prompt clone the project
 * $npm start
 
 [Watch the Tutorial](https://youtu.be/Fq15pkckMqQ).
+
+  const [isChecked, setIsChecked] = useState(Array(itemsFromBackend.length).fill(true));
+
+  const handleCheckBox = (index) => {
+    const newCheckedState = [...isChecked];
+    newCheckedState[index] = !newCheckedState[index];
+    setIsChecked(newCheckedState);
+  };
